@@ -1733,7 +1733,7 @@ void static Discover()
 }
 
 static void run_tor() {
-    std::string logDecl = "notice file " + GetDefaultDataDir().string() + "/tor/tor.log";
+    std::string logDecl = "notice file " + GetDataDir().string() + "/tor/tor.log";
     char *argvLogDecl = (char*) logDecl.c_str();
 
     char* argv[] = {

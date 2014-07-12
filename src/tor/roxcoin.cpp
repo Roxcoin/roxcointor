@@ -15,7 +15,7 @@
 char const* roxcoin_tor_data_directory(
 ) {
     static std::string const retrieved = (
-        GetDefaultDataDir(
+        GetDataDir(
         ) / "tor"
     ).string(
     );
@@ -26,7 +26,7 @@ char const* roxcoin_tor_data_directory(
 char const* roxcoin_service_directory(
 ) {
     static std::string const retrieved = (
-        GetDefaultDataDir(
+        GetDataDir(
         ) / "onion"
     ).string(
     );
